@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Видалено cache: 'npm', оскільки package-lock.json відсутній у репозиторії
       - name: Install dependencies
         run: npm install
       - name: Build
